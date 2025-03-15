@@ -1,0 +1,91 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Operation successful",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "clear": "Clear",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "all": "All",
+    "more": "More",
+    "less": "Less"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "forgotPassword": "Forgot Password",
+    "resetPassword": "Reset Password",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "rememberMe": "Remember Me",
+    "name": "Name",
+    "surname": "Surname",
+    "phone": "Phone",
+    "verifyEmail": "Verify Email",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?"
+  },
+  "validation": {
+    "required": "{field} is required",
+    "email": "Please enter a valid email address",
+    "minLength": "Please enter at least {min} characters",
+    "maxLength": "Please enter no more than {max} characters",
+    "passwordMatch": "Passwords do not match",
+    "invalidFormat": "Invalid format"
+  },
+  "product": {
+    "price": "Price",
+    "quantity": "Quantity",
+    "stock": "Stock",
+    "category": "Category",
+    "brand": "Brand",
+    "description": "Description",
+    "specifications": "Specifications",
+    "reviews": "Reviews",
+    "addToCart": "Add to Cart",
+    "addToWishlist": "Add to Wishlist",
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "tax": "Tax",
+    "discount": "Discount",
+    "checkout": "Checkout",
+    "continueShopping": "Continue Shopping",
+    "remove": "Remove",
+    "clear": "Clear Cart"
+  },
+  "user": {
+    "profile": "Profile",
+    "orders": "My Orders",
+    "wishlist": "My Wishlist",
+    "addresses": "My Addresses",
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "logout": "Logout"
+  },
+  "error": {
+    "404": "Page Not Found",
+    "500": "Server Error",
+    "network": "Network Error",
+    "unauthorized": "Unauthorized Access",
+    "forbidden": "Access Forbidden"
+  }
+} 

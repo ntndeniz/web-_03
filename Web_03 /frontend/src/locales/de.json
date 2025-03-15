@@ -1,0 +1,91 @@
+{
+  "common": {
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Operation erfolgreich",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "back": "Zurück",
+    "next": "Weiter",
+    "search": "Suchen",
+    "filter": "Filter",
+    "sort": "Sortieren",
+    "clear": "Löschen",
+    "close": "Schließen",
+    "yes": "Ja",
+    "no": "Nein",
+    "all": "Alle",
+    "more": "Mehr",
+    "less": "Weniger"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "logout": "Abmelden",
+    "forgotPassword": "Passwort vergessen",
+    "resetPassword": "Passwort zurücksetzen",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "rememberMe": "Angemeldet bleiben",
+    "name": "Vorname",
+    "surname": "Nachname",
+    "phone": "Telefon",
+    "verifyEmail": "E-Mail bestätigen",
+    "alreadyHaveAccount": "Bereits ein Konto?",
+    "dontHaveAccount": "Noch kein Konto?"
+  },
+  "validation": {
+    "required": "{field} ist erforderlich",
+    "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "minLength": "Bitte geben Sie mindestens {min} Zeichen ein",
+    "maxLength": "Bitte geben Sie höchstens {max} Zeichen ein",
+    "passwordMatch": "Passwörter stimmen nicht überein",
+    "invalidFormat": "Ungültiges Format"
+  },
+  "product": {
+    "price": "Preis",
+    "quantity": "Menge",
+    "stock": "Lagerbestand",
+    "category": "Kategorie",
+    "brand": "Marke",
+    "description": "Beschreibung",
+    "specifications": "Spezifikationen",
+    "reviews": "Bewertungen",
+    "addToCart": "In den Warenkorb",
+    "addToWishlist": "Zur Wunschliste",
+    "outOfStock": "Nicht auf Lager",
+    "inStock": "Auf Lager"
+  },
+  "cart": {
+    "title": "Warenkorb",
+    "empty": "Ihr Warenkorb ist leer",
+    "total": "Gesamt",
+    "subtotal": "Zwischensumme",
+    "shipping": "Versand",
+    "tax": "MwSt",
+    "discount": "Rabatt",
+    "checkout": "Zur Kasse",
+    "continueShopping": "Weiter einkaufen",
+    "remove": "Entfernen",
+    "clear": "Warenkorb leeren"
+  },
+  "user": {
+    "profile": "Profil",
+    "orders": "Meine Bestellungen",
+    "wishlist": "Meine Wunschliste",
+    "addresses": "Meine Adressen",
+    "settings": "Einstellungen",
+    "notifications": "Benachrichtigungen",
+    "logout": "Abmelden"
+  },
+  "error": {
+    "404": "Seite nicht gefunden",
+    "500": "Serverfehler",
+    "network": "Netzwerkfehler",
+    "unauthorized": "Nicht autorisierter Zugriff",
+    "forbidden": "Zugriff verweigert"
+  }
+} 

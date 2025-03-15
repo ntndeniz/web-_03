@@ -1,0 +1,91 @@
+{
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "success": "İşlem başarılı",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "back": "Geri",
+    "next": "İleri",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "sort": "Sırala",
+    "clear": "Temizle",
+    "close": "Kapat",
+    "yes": "Evet",
+    "no": "Hayır",
+    "all": "Tümü",
+    "more": "Daha Fazla",
+    "less": "Daha Az"
+  },
+  "auth": {
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "logout": "Çıkış Yap",
+    "forgotPassword": "Şifremi Unuttum",
+    "resetPassword": "Şifre Sıfırla",
+    "email": "E-posta",
+    "password": "Şifre",
+    "confirmPassword": "Şifre Tekrar",
+    "rememberMe": "Beni Hatırla",
+    "name": "Ad",
+    "surname": "Soyad",
+    "phone": "Telefon",
+    "verifyEmail": "E-posta Doğrulama",
+    "alreadyHaveAccount": "Zaten hesabınız var mı?",
+    "dontHaveAccount": "Hesabınız yok mu?"
+  },
+  "validation": {
+    "required": "{field} alanı zorunludur",
+    "email": "Geçerli bir e-posta adresi giriniz",
+    "minLength": "En az {min} karakter giriniz",
+    "maxLength": "En fazla {max} karakter giriniz",
+    "passwordMatch": "Şifreler eşleşmiyor",
+    "invalidFormat": "Geçersiz format"
+  },
+  "product": {
+    "price": "Fiyat",
+    "quantity": "Adet",
+    "stock": "Stok",
+    "category": "Kategori",
+    "brand": "Marka",
+    "description": "Açıklama",
+    "specifications": "Özellikler",
+    "reviews": "Değerlendirmeler",
+    "addToCart": "Sepete Ekle",
+    "addToWishlist": "Favorilere Ekle",
+    "outOfStock": "Stokta Yok",
+    "inStock": "Stokta Var"
+  },
+  "cart": {
+    "title": "Alışveriş Sepeti",
+    "empty": "Sepetiniz boş",
+    "total": "Toplam",
+    "subtotal": "Ara Toplam",
+    "shipping": "Kargo",
+    "tax": "KDV",
+    "discount": "İndirim",
+    "checkout": "Ödemeye Geç",
+    "continueShopping": "Alışverişe Devam Et",
+    "remove": "Kaldır",
+    "clear": "Sepeti Temizle"
+  },
+  "user": {
+    "profile": "Profil",
+    "orders": "Siparişlerim",
+    "wishlist": "Favorilerim",
+    "addresses": "Adreslerim",
+    "settings": "Ayarlar",
+    "notifications": "Bildirimler",
+    "logout": "Çıkış Yap"
+  },
+  "error": {
+    "404": "Sayfa Bulunamadı",
+    "500": "Sunucu Hatası",
+    "network": "Bağlantı Hatası",
+    "unauthorized": "Yetkisiz Erişim",
+    "forbidden": "Erişim Engellendi"
+  }
+} 

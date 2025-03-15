@@ -1,0 +1,85 @@
+// Fade animasyonları
+.fade {
+  &-enter-active,
+  &-leave-active {
+    transition: opacity 0.3s ease;
+  }
+
+  &-enter-from,
+  &-leave-to {
+    opacity: 0;
+  }
+}
+
+// Slide animasyonları
+.slide {
+  &-enter-active,
+  &-leave-active {
+    transition: transform 0.3s ease;
+  }
+
+  &-enter-from {
+    transform: translateX(100%);
+  }
+
+  &-leave-to {
+    transform: translateX(-100%);
+  }
+}
+
+// Scale animasyonları
+.scale {
+  &-enter-active,
+  &-leave-active {
+    transition: transform 0.3s ease;
+  }
+
+  &-enter-from,
+  &-leave-to {
+    transform: scale(0.9);
+  }
+}
+
+// Liste animasyonları
+.list-move,
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.3s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+// Loading spinner animasyonu
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+// Pulse animasyonu
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s ease infinite;
+} 

@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # Frontend servisi
+  frontend:
+    build:
+      context: ../..
+      dockerfile: src/deploy/Dockerfile
+    container_name: vue-frontend
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env.production
+    networks:
+      - app-network
+    depends_on:
+      - api
+
+  # API servisi
+  api:
+    image: node:16-alpine
+    container_name: node-api
+    working_dir: /app
+    volumes:
+      - ../../backend:/app
+    command: npm start
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env.production
+    networks:
+      - app-network
+
+# Ağ tanımı
+networks:
+  app-network:
+    driver: bridge 

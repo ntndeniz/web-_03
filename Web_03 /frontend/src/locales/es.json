@@ -1,0 +1,91 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "success": "Operación exitosa",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "clear": "Limpiar",
+    "close": "Cerrar",
+    "yes": "Sí",
+    "no": "No",
+    "all": "Todo",
+    "more": "Más",
+    "less": "Menos"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "logout": "Cerrar sesión",
+    "forgotPassword": "Olvidé mi contraseña",
+    "resetPassword": "Restablecer contraseña",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "rememberMe": "Recordarme",
+    "name": "Nombre",
+    "surname": "Apellido",
+    "phone": "Teléfono",
+    "verifyEmail": "Verificar correo",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "dontHaveAccount": "¿No tienes una cuenta?"
+  },
+  "validation": {
+    "required": "{field} es requerido",
+    "email": "Por favor ingrese un correo válido",
+    "minLength": "Por favor ingrese al menos {min} caracteres",
+    "maxLength": "Por favor ingrese no más de {max} caracteres",
+    "passwordMatch": "Las contraseñas no coinciden",
+    "invalidFormat": "Formato inválido"
+  },
+  "product": {
+    "price": "Precio",
+    "quantity": "Cantidad",
+    "stock": "Stock",
+    "category": "Categoría",
+    "brand": "Marca",
+    "description": "Descripción",
+    "specifications": "Especificaciones",
+    "reviews": "Reseñas",
+    "addToCart": "Agregar al carrito",
+    "addToWishlist": "Agregar a favoritos",
+    "outOfStock": "Agotado",
+    "inStock": "Disponible"
+  },
+  "cart": {
+    "title": "Carrito de compras",
+    "empty": "Tu carrito está vacío",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "shipping": "Envío",
+    "tax": "Impuestos",
+    "discount": "Descuento",
+    "checkout": "Finalizar compra",
+    "continueShopping": "Seguir comprando",
+    "remove": "Eliminar",
+    "clear": "Vaciar carrito"
+  },
+  "user": {
+    "profile": "Perfil",
+    "orders": "Mis pedidos",
+    "wishlist": "Mis favoritos",
+    "addresses": "Mis direcciones",
+    "settings": "Configuración",
+    "notifications": "Notificaciones",
+    "logout": "Cerrar sesión"
+  },
+  "error": {
+    "404": "Página no encontrada",
+    "500": "Error del servidor",
+    "network": "Error de red",
+    "unauthorized": "Acceso no autorizado",
+    "forbidden": "Acceso prohibido"
+  }
+} 

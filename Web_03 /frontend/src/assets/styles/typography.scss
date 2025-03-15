@@ -1,0 +1,171 @@
+// Font aileleri
+.font {
+  &-sans {
+    font-family: theme('fontFamily.sans');
+  }
+
+  &-serif {
+    font-family: theme('fontFamily.serif');
+  }
+
+  &-mono {
+    font-family: theme('fontFamily.mono');
+  }
+}
+
+// Font boyutları
+.text {
+  &-xs {
+    font-size: theme('fontSize.xs');
+    line-height: 1rem;
+  }
+
+  &-sm {
+    font-size: theme('fontSize.sm');
+    line-height: 1.25rem;
+  }
+
+  &-base {
+    font-size: theme('fontSize.base');
+    line-height: 1.5rem;
+  }
+
+  &-lg {
+    font-size: theme('fontSize.lg');
+    line-height: 1.75rem;
+  }
+
+  &-xl {
+    font-size: theme('fontSize.xl');
+    line-height: 1.75rem;
+  }
+
+  &-2xl {
+    font-size: theme('fontSize.2xl');
+    line-height: 2rem;
+  }
+
+  &-3xl {
+    font-size: theme('fontSize.3xl');
+    line-height: 2.25rem;
+  }
+}
+
+// Font ağırlıkları
+.font {
+  &-thin {
+    font-weight: 100;
+  }
+
+  &-extralight {
+    font-weight: 200;
+  }
+
+  &-light {
+    font-weight: 300;
+  }
+
+  &-normal {
+    font-weight: 400;
+  }
+
+  &-medium {
+    font-weight: 500;
+  }
+
+  &-semibold {
+    font-weight: 600;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-extrabold {
+    font-weight: 800;
+  }
+
+  &-black {
+    font-weight: 900;
+  }
+}
+
+// Metin hizalama
+.text {
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+}
+
+// Metin dönüşümleri
+.text {
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-lowercase {
+    text-transform: lowercase;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+
+  &-normal-case {
+    text-transform: none;
+  }
+}
+
+// Metin stilleri
+.text {
+  &-underline {
+    text-decoration: underline;
+  }
+
+  &-line-through {
+    text-decoration: line-through;
+  }
+
+  &-no-underline {
+    text-decoration: none;
+  }
+}
+
+// Satır yükseklikleri
+.leading {
+  &-none {
+    line-height: 1;
+  }
+
+  &-tight {
+    line-height: 1.25;
+  }
+
+  &-snug {
+    line-height: 1.375;
+  }
+
+  &-normal {
+    line-height: 1.5;
+  }
+
+  &-relaxed {
+    line-height: 1.625;
+  }
+
+  &-loose {
+    line-height: 2;
+  }
+} 
