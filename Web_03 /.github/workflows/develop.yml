@@ -1,0 +1,57 @@
+name: Development Pipeline
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Node.js Kurulumu
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        
+    - name: Bağımlılıkları Yükle
+      run: npm ci
+      
+    - name: Linter Kontrolü
+      run: npm run lint
+      
+    - name: Unit Testleri Çalıştır
+      run: npm run test:unit
+      
+  build:
+    name: Build ve Deploy (Staging)
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/develop'
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Node.js Kurulumu
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        
+    - name: Bağımlılıkları Yükle
+      run: npm ci
+      
+    - name: Production Build
+      run: npm run build:staging
+      
+    - name: Firebase Deploy (Staging)
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: '${{ secrets.GITHUB_TOKEN }}'
+        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_STAGING }}'
+        projectId: '${{ secrets.FIREBASE_PROJECT_ID_STAGING }}'
+        channelId: staging 

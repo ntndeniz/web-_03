@@ -1,0 +1,18 @@
+# Ana proje klasörünü oluştur
+mkdir e-ticaret-projesi
+cd e-ticaret-projesi
+
+# Frontend, Backend ve Firebase klasörlerini oluştur
+mkdir frontend backend firebase
+
+# Frontend projesini oluştur
+cd frontend
+vue create .
+
+# Backend projesini oluştur
+cd ../backend
+npm init -y
+
+# Firebase projesini başlat
+cd ../firebase
+firebase init 

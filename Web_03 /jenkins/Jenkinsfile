@@ -1,0 +1,75 @@
+pipeline {
+    agent {
+        docker {
+            image 'node:16-alpine'
+            args '-p 3000:3000'
+        }
+    }
+    
+    environment {
+        CI = 'true'
+        HOME = '.'
+        npm_config_cache = 'npm-cache'
+    }
+    
+    stages {
+        stage('Bağımlılıkları Yükle') {
+            steps {
+                sh 'npm ci'
+            }
+        }
+        
+        stage('Lint') {
+            steps {
+                sh 'npm run lint'
+            }
+        }
+        
+        stage('Test') {
+            parallel {
+                stage('Unit Tests') {
+                    steps {
+                        sh 'npm run test:unit'
+                    }
+                }
+                stage('E2E Tests') {
+                    steps {
+                        sh 'npm run test:e2e'
+                    }
+                }
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                sh 'npm run build'
+            }
+        }
+        
+        stage('Deploy') {
+            when {
+                branch 'main'
+            }
+            steps {
+                withCredentials([string(credentialsId: 'FIREBASE_TOKEN', variable: 'FIREBASE_TOKEN')]) {
+                    sh '''
+                        npm install -g firebase-tools
+                        firebase deploy --token $FIREBASE_TOKEN
+                    '''
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            cleanWs()
+        }
+        success {
+            echo 'Pipeline başarıyla tamamlandı!'
+        }
+        failure {
+            echo 'Pipeline başarısız oldu!'
+        }
+    }
+} 

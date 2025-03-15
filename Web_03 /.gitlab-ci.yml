@@ -1,0 +1,63 @@
+image: node:16-alpine
+
+stages:
+  - test
+  - build
+  - deploy
+
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+
+cache:
+  paths:
+    - .npm
+    - node_modules
+
+# Test aşaması
+test:
+  stage: test
+  script:
+    - npm ci
+    - npm run lint
+    - npm run test:unit
+  except:
+    - main
+    - develop
+
+# Build aşaması
+build:
+  stage: build
+  script:
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+  only:
+    - main
+    - develop
+
+# Deploy aşaması (Production)
+deploy_production:
+  stage: deploy
+  script:
+    - npm install -g firebase-tools
+    - firebase deploy --token $FIREBASE_TOKEN
+  environment:
+    name: production
+    url: https://example.com
+  only:
+    - main
+
+# Deploy aşaması (Staging)
+deploy_staging:
+  stage: deploy
+  script:
+    - npm install -g firebase-tools
+    - firebase use staging
+    - firebase deploy --token $FIREBASE_TOKEN
+  environment:
+    name: staging
+    url: https://staging.example.com
+  only:
+    - develop 
